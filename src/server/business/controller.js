@@ -9,8 +9,12 @@ export const businessController = {
   async handler(_request, h) {
     const sbi = 117235001;
     const crn = 1100598138;
-    const businessData = await fetchBusinessData(sbi, crn);
+    let businessData = {};
+    try {
+      businessData = await fetchBusinessData(sbi, crn);
+    } catch(e) {
 
+    }
     return h.view('business/index', {
       pageTitle: 'Business',
       heading: 'Business',
