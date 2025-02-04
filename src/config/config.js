@@ -1,4 +1,5 @@
 import convict from 'convict'
+import 'dotenv/config'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -52,6 +53,12 @@ export const config = convict({
     format: String,
     default: '/public',
     env: 'ASSET_PATH'
+  },
+  landGrantsApi: {
+    doc: 'Land Grants API URL',
+    format: String,
+    default: '',
+    env: 'LAND_GRANTS_API_URL'
   },
   isProduction: {
     doc: 'If this application running in the production environment',
