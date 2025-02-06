@@ -10,11 +10,12 @@
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-body" data-testid="app-page-body">
         <p>
-         SBI: {{ businessData.sbi }}
-         Org ID: {{ businessData.organisationId }}
+         SBI: {{ businessData.business.sbi }}
+         Org ID: {{ businessData.business.organisationId }}
         </p>
       </div>
     </div>
   </div>
 
 {% endblock %}
+

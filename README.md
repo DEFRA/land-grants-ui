@@ -69,6 +69,8 @@ Install application dependencies:
 ```bash
 npm install
 ```
+Create a `.env` file with the following:
+``LAND_GRANTS_API_URL=http://localhost:3001``
 
 ### Development
 
@@ -186,3 +188,4 @@ information providers in the public sector to license the use and re-use of thei
 licence.
 
 It is designed to encourage use and re-use of information freely and flexibly, with only a few conditions.
+
